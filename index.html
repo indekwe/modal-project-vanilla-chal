@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5ebc0cf515.js" crossorigin="anonymous"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style="background-image: url(./img/hero.jpeg);" class=" grid grid-cols-3 bg-cover bg-center h-screen bg-no-repeat">
+    <div></div>
+    <div class="w-[620px] h-[268px] bg-slate-300 place-self-center mt-40 rounded-lg " id="modal">
+        <div class="mt-12 ml-[100px]">
+        <h1 class="text-gray-800 text-6xl font-bold">Modal Project</h1>
+        </div>
+        <div class="bg-blue-500 w-[150px] ml-[200px] rounded-lg mt-12 h-8 hover:bg-white hover:border-blue-500 hover:border-2" id="btn">
+        <button class="pl-6 text-sm text-white font-aerial uppercase tracking-widest font-medium text-center mt-1.5  hover:text-black">open modal</button>
+        </div>
+    </div>
+    <div class="w-[620px] h-[180px] bg-slate-300 place-self-center mt-40 rounded-lg relative hidden" id="new-modal">
+        <div class="mt-16 ml-[200px]">
+        <h1 class="text-gray-800 text-3xl font-bold tracking-widest">Modal Content</h1>
+        </div>
+        <div class="ml-5 absolute right-4 mt-2 top-0 " >
+            <i class="fas fa-times  w-[19px] h-[20px] text-red-600 text-2xl font-bold hover:bg-orange-400" id="cancel"></i>
+            </div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+</html>
